@@ -27,13 +27,25 @@
                     </div>
                 </div>
                 <div id="chat-notifiche">
+                    <i class="fa fa-bell-slash" aria-hidden="true"></i>
+                    <div>
+                        <p class="mb-0">Ricedvi notifiche di nuovi messaggi</p>
+                        <p class="mb-0">Attiva notiche desktop</p>
+                    </div>
 
                 </div>
                 <div id="chat-search">
-
+                    <div class="position-relative">
+                        <input type="text">
+                        <i class="fas fa-search position-absolute"></i>
+                    </div>
                 </div>
-                <div id="chat-contacs">
-
+                <div id="chat-contacts">
+                    <div v-for=" (elem,index) in contacts"
+                    :key="index">
+                    <img :src="elem.avatar" alt="elem.name">
+                    <span>{{ elem.name }}</span>
+                    </div>
                 </div>
             </div>
             <!-- lato dx -->

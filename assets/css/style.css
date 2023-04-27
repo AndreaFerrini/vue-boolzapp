@@ -59,3 +59,50 @@
 .avatar-icons i:last-child {
     margin-right: 0;
 }
+
+#chat-notifiche {
+    background-color: #99DAFD;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#chat-notifiche i{
+    color: #99DAFD;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#chat-search {
+    padding: 10px;
+}
+
+#chat-search div input {
+    padding-left: 32px;
+    width: 100%;
+}
+
+#chat-search div i {
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+}
+
+#chat-contacts div {
+    padding: 10px;
+}
+
+#chat-contacts div:hover {
+    background-color: #B0B1B3;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#chat-contacts div img {
+    max-width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
