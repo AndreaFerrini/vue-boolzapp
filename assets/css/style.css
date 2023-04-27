@@ -18,6 +18,44 @@
 #chat {
     width: 80%;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #E9EAED;
     height: 80%;
+    display: flex;
+}
+
+#chat-sx,
+#chat-dx  {
+    height: 100%;
+    border: 1px solid black;
+}
+
+#chat-sx {
+    width: 30%;
+}
+
+#chat-dx {
+    width: 70%;
+}
+
+.header-chat {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-chat .avatar img {
+    border-radius: 50%;
+    max-width: 50px;
+    margin-right: 20px;
+}
+
+.avatar-icons i {
+    margin: 0 10px;
+    color: #B0B1B3;
+}
+
+.avatar-icons i:last-child {
+    margin-right: 0;
 }
