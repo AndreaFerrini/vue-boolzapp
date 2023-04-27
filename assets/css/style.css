@@ -3,3 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.gradiente {
+    background-image: linear-gradient(to bottom, #009688 0px, #009688 15vh, #dddbd1 15vh, #d2dbdc 100%);
+}
+
+.webapp {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chat {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    height: 80%;
+}
