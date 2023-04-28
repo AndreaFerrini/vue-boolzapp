@@ -67,16 +67,19 @@
                     v-for=" (elem,index) in contacts[indiceDinamico].messages">
                         <p>{{ elem.message }}</p>
                     </div>
-                    <div class="sent">
+                    <!-- <div class="sent">
                         <p>Ricordati di stendere i panni</p>
                     </div>
                     <div class="received">
                         <p>Tutto fatto!</p>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="chat-message">
                     <i class="far fa-smile"></i>
-                    <input type="text">
+                    <input type="text"
+                        placeholder="scrivi un messaggio"
+                        v-model="testoMessaggio"
+                        @keyUp.enter="scriviMessaggio">
                     <i class="fa fa-microphone" aria-hidden="true"></i>
                 </div>
             </div>

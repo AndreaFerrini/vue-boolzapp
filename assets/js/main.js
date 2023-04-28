@@ -168,7 +168,8 @@ createApp({
                 ],
             }
             ],
-            indiceDinamico: 0
+            indiceDinamico: 0,
+            testoMessaggio: ``
         }
     },
     mounted() {
@@ -178,6 +179,13 @@ createApp({
         recuperaId(i) {
             console.log(`indice elemento cliccato: ${i}`)
             this.indiceDinamico = i
+        },
+        scriviMessaggio() {
+            this.contacts[ this.indiceDinamico ].messages.push( {
+                date: `10/01/2020 15:30:55`,
+                message: this.testoMessaggio,
+                status: 'sent'
+             } )
         },
     }
 }).mount(`#app`)
