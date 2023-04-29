@@ -186,6 +186,16 @@ createApp({
                 message: this.testoMessaggio,
                 status: 'sent'
              } )
+
+            this.testoMessaggio = ``
+
+             setTimeout( ()=>{ 
+                this.contacts[ this.indiceDinamico ].messages.push( {
+                    date: `29/04/2030 17:00:00`,
+                    message: `Non lo so`,
+                    status: 'received'
+                 } )
+             }, 1000 )
         },
     }
 }).mount(`#app`)
