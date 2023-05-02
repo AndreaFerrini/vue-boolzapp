@@ -36,14 +36,16 @@
                 </div>
                 <div id="chat-search">
                     <div class="position-relative">
-                        <input type="text">
+                        <input type="text" v-model="nomeContattoRicerca" 
+                        @keyUp="ricercaUtente">
                         <i class="fas fa-search position-absolute"></i>
                     </div>
                 </div>
                 <div id="chat-contacts">
                     <div v-for=" (elem,index) in contacts"
                     :key="index"
-                    @click="recuperaId(index)">
+                    @click="recuperaId(index)"
+                    :class=" elem.visible ? `d-flex` : `d-none`">
                     <img :src="elem.avatar" alt="elem.name">
                     <span>{{ elem.name }}</span>
                     </div>

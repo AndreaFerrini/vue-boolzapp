@@ -169,7 +169,8 @@ createApp({
             }
             ],
             indiceDinamico: 0,
-            testoMessaggio: ``
+            testoMessaggio: ``,
+            nomeContattoRicerca: ``
         }
     },
     mounted() {
@@ -197,5 +198,17 @@ createApp({
                  } )
              }, 1000 )
         },
+        ricercaUtente() {
+
+
+
+            this.contacts.forEach( (elem) => {
+                if( elem.name.toLowerCase().toUpperCase().includes( this.nomeContattoRicerca) ) {
+                    elem.visible = true
+                } else {
+                    elem.visible = false
+                }
+            })
+        }
     }
 }).mount(`#app`)
